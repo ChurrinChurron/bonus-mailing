@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+
+            max-width: 600px;
+            border: none;
+        }
+
+        thead {
+
+            height: 200px;
+            background-color: #0049ac;
+        }
+
+        thead > tr {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .head__titulo, .head__logo {
+
+            padding: 2em;
+        }
+
+         .head__titulo {
+
+            position: relative;
+            top: 2em;
+        } 
+
+        .head__titulo > h2 {
+
+            max-width: 4em;
+            color: #fff;
+            font-size: 2.8em;
+            font-weight: 400;
+            letter-spacing: 0.045em;
+        }
+
+        .head__titulo > h2 > #punto {
+
+            color: #ffd100;
+        }
+
+
+        .head__logo > img {
+
+            width: 11.5em;
+        }
+
+        tbody {
+
+            text-align: center;
+            color: #0049ac;
+            letter-spacing: 0.045em;
+        }
+
+        .body__titulo h2 {
+
+            margin: 0 5em;
+        }
+
+        .body__descrip p {
+
+            margin: 0 2em;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .body__puntos > td {
+
+            padding: 1.5em 0;
+        }
+
+        .body__titulo > td, .body__logos > td {
+
+            padding-bottom: 1.5em;
+        }
+
+        .body__link > td {
+
+            padding: 0.5em 0 2.2em 0;
+        }
+
+        .body__link a {
+
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 0.7em 1.4em;
+            background-color: #ffd100;
+            font-weight: 600;
+
+        }
+
+        .body__logos > td {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body__logos #primax {
+
+            height: 2.2em;
+            margin-left: 1.6em;
+        }
+
+        tfoot {
+
+            height: 50px;
+            background-color: #0049ac;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <td class="head__titulo">
+                <h2>Hola <span id="username">Lucero</span><span id="punto">.</span></h2>
+            </td>
+            <td class="head__logo">
+                <img src="logo.png" alt="logo">
+            </td>
+        </thead>
+        <tbody>
+            <tr  class="body__puntos">
+                <td>
+                    <img src="puntos_amarillos.png" alt="puntos">
+                </td>
+            </tr>
+            <tr class="body__titulo">
+                <td>
+                    <h2>¡QUEREMOS SEGUIR MEJORANDO PARA TI!</h2>
+                </td>
+            </tr>
+            <tr class="body__descrip">
+                <td>
+                    <p>Tu opinión es muy importante para nosotros. Por ello, te invitamos 
+                        a contarnos tu experiencia canjeando tus puntos <b>Bonus</b> en <b>Primax</b> 
+                        a través de una encuesta que solo te tomará 1 minuto en completar.
+                    </p>
+                </td>
+            </tr>
+            <tr class="body__puntos">
+                <td>
+                    <img src="puntos_amarillos.png" alt="puntos">
+                </td>
+            </tr>
+            <tr class="body__link">
+                <td>
+                    <a href="#">COMPLETAR ENCUESTA</a>
+                </td>
+            </tr>
+            <tr class="body__logos">
+                <td>
+                    <img src="bonus-logo.png" alt="bonus">
+                    <img id="primax" src="Primax.svg" alt="primax">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
